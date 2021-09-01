@@ -74,7 +74,7 @@ public class ZhouyuApplicationContext {
             }
 
             for (BeanPostProcessor beanPostProcessor: beanPostProcessorList) {
-                beanPostProcessor.postProcessAfterInitialization(beanName, instance);
+                instance = beanPostProcessor.postProcessAfterInitialization(beanName, instance);
             }
 
             return instance;
