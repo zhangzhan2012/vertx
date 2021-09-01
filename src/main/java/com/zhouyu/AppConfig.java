@@ -1,7 +1,7 @@
-package com.luban;
+package com.zhouyu;
 
 import com.spring.ComponentScan;
 
-@ComponentScan("com.luban.service")
+@ComponentScan("com.zhouyu.service")
 public class AppConfig {
 }

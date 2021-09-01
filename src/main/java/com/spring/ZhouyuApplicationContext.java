@@ -9,14 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class LubanApplicationContext {
+public class ZhouyuApplicationContext {
 
     private ConcurrentHashMap<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<>();
     private ConcurrentHashMap<String, Object> singletonObjects = new ConcurrentHashMap<>();
     private List<BeanPostProcessor> beanPostProcessorList = new ArrayList<>();
 
     // Spring启动流程
-    public LubanApplicationContext(Class configClass) {
+    public ZhouyuApplicationContext(Class configClass) {
         // 扫描类 得到 BeanDefinition
         scan(configClass);
 
@@ -148,7 +148,7 @@ public class LubanApplicationContext {
     private List<Class> genBeanClasses(String packagePath) {
         List<Class> beanClasses = new ArrayList<>();
 
-        ClassLoader classLoader = LubanApplicationContext.class.getClassLoader();
+        ClassLoader classLoader = ZhouyuApplicationContext.class.getClassLoader();
         packagePath = packagePath.replace(".", "/");
         URL resource = classLoader.getResource(packagePath);
         File file = new File(resource.getFile());

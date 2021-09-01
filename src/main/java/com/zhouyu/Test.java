@@ -1,12 +1,11 @@
-package com.luban;
+package com.zhouyu;
 
-import com.luban.service.OrderService;
-import com.spring.LubanApplicationContext;
+import com.spring.ZhouyuApplicationContext;
 
 public class Test {
 
     public static void main(String[] args) {
-        LubanApplicationContext applicationContext = new LubanApplicationContext(AppConfig.class);
+        ZhouyuApplicationContext applicationContext = new ZhouyuApplicationContext(AppConfig.class);
         System.out.println(applicationContext.getBean("orderService"));
         System.out.println(applicationContext.getBean("orderService"));
         System.out.println(applicationContext.getBean("orderService"));

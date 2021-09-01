@@ -1,10 +1,10 @@
-package com.luban.service;
+package com.zhouyu.service;
 
 import com.spring.BeanPostProcessor;
 import com.spring.Component;
 
 @Component
-public class LubanBeanPostProcessor implements BeanPostProcessor {
+public class ZhouyuBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public void postProcessBeforeInitialization(String beanName, Object bean) {
